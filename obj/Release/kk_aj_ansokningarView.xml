@@ -128,6 +128,24 @@ kk_aj_ansokningarView
  
  </summary>
 </member>
+<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_roll">
+<summary>
+kk_aj_roll control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_page">
+<summary>
+kk_aj_page control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="M:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View.Page_Load(System.Object,System.EventArgs)">
  -----------------------------------------------------------------------------
  <summary>
