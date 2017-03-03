@@ -14,20 +14,20 @@ Option Explicit On
 Partial Public Class View
     
     '''<summary>
-    '''kk_aj_roll control.
+    '''kk_aj_CurrentRollid control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents kk_aj_roll As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents kk_aj_CurrentRollid As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''kk_aj_page control.
+    '''kk_aj_CurrentPageType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents kk_aj_page As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents kk_aj_CurrentPageType As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

@@ -128,18 +128,18 @@ kk_aj_ansokningarView
  
  </summary>
 </member>
-<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_roll">
+<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_CurrentRollid">
 <summary>
-kk_aj_roll control.
+kk_aj_CurrentRollid control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_page">
+<member name="F:kulturkatalogenadmin.aj.kk_aj_ansokningarView.View._kk_aj_CurrentPageType">
 <summary>
-kk_aj_page control.
+kk_aj_CurrentPageType control.
 </summary>
 <remarks>
 Auto-generated field.

@@ -42,9 +42,8 @@ Public Class View
         Try
             Dim conf As New viewstartupconfig
             Dim nowUser As UserInfo = DotNetNuke.Entities.Users.UserController.Instance.GetCurrentUserInfo()
-            kk_aj_roll.InnerHtml = conf.setUserRoll(nowUser)
-
-            kk_aj_page.InnerHtml = conf.getcurrentPageView(ModuleId)
+            kk_aj_CurrentRollid.InnerHtml = conf.setUserRoll(nowUser)
+            kk_aj_CurrentPageType.InnerHtml = conf.getcurrentPageView(ModuleId)
 
         Catch exc As Exception
             Exceptions.ProcessModuleLoadException(Me, exc)
