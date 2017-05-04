@@ -6,3 +6,11 @@ D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_a
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.xml
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.pdb
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.vbprojResolveAssemblyReference.cache
+D:\wwwroot\dnndev_v902.me\bin\kk_aj_ansokningarView.dll.config
+D:\wwwroot\dnndev_v902.me\bin\kk_aj_ansokningarView.dll
+D:\wwwroot\dnndev_v902.me\bin\kk_aj_ansokningarView.pdb
+D:\wwwroot\dnndev_v902.me\bin\kk_aj_ansokningarView.xml
+D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.dll
+D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.xml
+D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.pdb
+D:\wwwroot\dnndev_v902.me\DesktopModules\kk_aj_ansokningarView\obj\Release\kk_aj_ansokningarView.vbprojResolveAssemblyReference.cache

@@ -26,16 +26,11 @@
                                 </div>
                             </div>
                             <div class="box-body no-padding">
-                                <ul class="nav nav-pills nav-stacked">
-                                    <li class="active">
-                                        <a href="#" class="kk_aj_nyadansokningar">
-                                            <i class="fa fa-inbox"></i> Nya ansökningar
-                                            <span class="label label-primary pull-right">12</span>
-                                        </a>
-                                    </li>
-                                    <li><a href="#" class="kk_aj_approvedansokningar"><i class="fa fa-file-text-o" aria-hidden="true"></i> Godkända <span class="label label-success pull-right">23</span></a></li>
-                                    <li><a href="#" class="kk_aj_deniedansokningar"><i class="fa fa-file-archive-o" aria-hidden="true"></i> Nekade <span class="label label-danger pull-right">65</span></a></li>
-                                    <li><a href="#" class="kk_aj_archiveansokningar"><i class="fa fa-lock" aria-hidden="true"></i> Arkiv</a></li>
+                                <ul class="nav nav-pills nav-stacked kk_aj_ansokanmenu">
+                                    <li class="kk_aj_nyansokanmenu active"><a href="#" class="kk_aj_nyadansokningar"><i class="fa fa-inbox"></i> Nya ansökningar<span class="label label-primary pull-right kk_aj_newcount">0</span></a></li>
+                                    <li class="kk_aj_approvedansokanmenu"><a href="#" class="kk_aj_approvedansokningar"><i class="fa fa-file-text-o" aria-hidden="true"></i> Godkända <span class="label label-success pull-right kk_aj_approvedcount">0</span></a></li>
+                                    <li class="kk_aj_deniedansokanmenu"><a href="#" class="kk_aj_deniedansokningar"><i class="fa fa-file-archive-o" aria-hidden="true"></i> Nekade <span class="label label-danger pull-right kk_aj_deniedcount">0</span></a></li>
+                                    <li class="kk_aj_archiveansokanmenu"><a href="#" class="kk_aj_archiveansokningar"><i class="fa fa-lock" aria-hidden="true"></i> Arkiv</a></li>
                                 </ul>
                             </div>
                             <!-- /.box-body -->
@@ -47,11 +42,13 @@
                 <div class="col-md-9">
                     <div class="box box-primary">
                         <div class="kk_aj_ansokanboxheader box-header with-border label-primary ">
-                            <h3 class="kk_aj_box-title box-title">Nya ansökningar</h3>
+                            <h3 class="kk_aj_box-title box-title" rel="kk_aj_ansokningarView" >Nya ansökningar</h3>
                             <div class="box-tools pull-right">
-                                <div class="has-feedback">
-                                    <input type="text" class="kk_aj_ansoksearchform form-control input-sm" placeholder="Sök i Ny ansökningar">
-                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" class="kk_aj_ansoksearchform form-control input-sm" placeholder="Sök i Ny ansökningar" rel="nya">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="kk_aj_ansoksearchformSubmit btn btn-default"><i class="fa fa-search"></i></button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- /.box-tools -->
@@ -60,33 +57,45 @@
                         <div class="box-body no-padding">
                             <div class="mailbox-controls">
                                 <!-- Check all button -->
-                                <button type="button" class="btn btn-default btn-sm checkbox-toggle" title="Markera alla">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle kk_aj_markall" title="Markera alla">
                                     <i class="fa fa-square-o"></i>
                                 </button>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-sm" title="Godkänn" ><i class="fa fa-check" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-default btn-sm" title="Neka"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Godkänn"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Neka"><i class="fa fa-times" aria-hidden="true"></i></button>
                                     
                                 </div>
                                 <!-- /.btn-group -->
-                                <button type="button" class="btn btn-default btn-sm" title="Uppdatera"><i class="fa fa-refresh"></i></button>
-                                <div class="pull-right">
-                                    1-50/200
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
-                                        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
-                                    </div>
-                                    <!-- /.btn-group -->
+                                <button type="button" class="btn btn-default btn-sm kk_aj_uppdateraannonser" title="Uppdatera"><i class="fa fa-refresh"></i></button>
+                                <div class="pull-right kk_aj_listpagecount">
+                                  
                                 </div>
                                 <!-- /.pull-right -->
                             </div>
                             <div class="table-responsive mailbox-messages">
-                                <table class="table table-hover table-striped kk_aj_ansokningar">
-                                    <tr>
-                                        <td><div class="kk_aj_loader"></div></td>
+                                <table class="table table-hover table-striped ">
+                                    
+                                        <tr class="tableheader">
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" class="kk_aj_sortutovare">Utövare <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td><a href="#" class="kk_aj_sortrubrik">Rubrik<i class="fa fa-caret-down" aria-hidden="true"></i></a></td>                                            
+                                            <td><a href="#" class="kk_aj_sortdatum">Datum<i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td></td>
+                                        </tr>     
+                                    <tbody class="kk_aj_ansokningar">
+                                    <tr>                                       
+                                        <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><div class="kk_aj_loader"></div></td>                                            
+                                            <td></td>
+                                            <td></td>                                       
                                     </tr> 
+                                    
+                                    
                                     <!-- handlebrake template: kk_aj_ansokningarLista.txt Loop -->
-
+                                    </tbody>
                                 </table>
                                 <!-- /.table -->
                             </div>
@@ -96,23 +105,18 @@
                         <div class="box-footer no-padding">
                             <div class="mailbox-controls">
                                 <!-- Check all button -->
-                                <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle kk_aj_markall" title="Markera alla">
                                     <i class="fa fa-square-o"></i>
                                 </button>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-check" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
-
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Godkänn"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Neka"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    
                                 </div>
                                 <!-- /.btn-group -->
-                                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
-                                <div class="pull-right">
-                                    1-50/200
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
-                                        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
-                                    </div>
-                                    <!-- /.btn-group -->
+                                <button type="button" class="btn btn-default btn-sm kk_aj_uppdateraannonser" title="Uppdatera"><i class="fa fa-refresh"></i></button>
+                                <div class="pull-right kk_aj_listpagecount">
+                                    
                                 </div>
                                 <!-- /.pull-right -->
                             </div>
