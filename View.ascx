@@ -61,8 +61,8 @@
                                     <i class="fa fa-square-o"></i>
                                 </button>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Godkänn"><i class="fa fa-check" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Neka"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Publicera/Avpublicera"><i class="fa fa-flag-o" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Arkivera"><i class="fa fa-lock" aria-hidden="true"></i></button>
                                     
                                 </div>
                                 <!-- /.btn-group -->
@@ -76,24 +76,24 @@
                                 <table class="table table-hover table-striped ">
                                     
                                         <tr class="tableheader">
+                                          
                                             <td></td>
-                                            <td></td>
-                                            <td><a href="#" class="kk_aj_sortutovare">Utövare <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
-                                            <td><a href="#" class="kk_aj_sortrubrik">Rubrik<i class="fa fa-caret-down" aria-hidden="true"></i></a></td>                                            
-                                            <td><a href="#" class="kk_aj_sortdatum">Datum<i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
-                                            <td></td>
+                                            <td></td>                                            
+                                            <td><a href="#" class="kk_aj_sortrubrik">Rubrik <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td><a href="#" class="kk_aj_sortutovare">Utövare  <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>                                            
+                                            <td><a href="#" class="kk_aj_sortkonstform">Konstform  <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td><a href="#" class="kk_aj_sortdatum">Datum <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            
                                         </tr>     
                                     <tbody class="kk_aj_ansokningar">
-                                    <tr>                                       
-                                        <td></td>
+                                        <tr>                                       
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                             <td><div class="kk_aj_loader"></div></td>                                            
                                             <td></td>
                                             <td></td>                                       
-                                    </tr> 
-                                    
-                                    
+                                        </tr>                                     
                                     <!-- handlebrake template: kk_aj_ansokningarLista.txt Loop -->
                                     </tbody>
                                 </table>
@@ -109,8 +109,8 @@
                                     <i class="fa fa-square-o"></i>
                                 </button>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Godkänn"><i class="fa fa-check" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Neka"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Publicera/Avpublicera"><i class="fa fa-flag-o" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Arkivera"><i class="fa fa-lock" aria-hidden="true"></i></button>
                                     
                                 </div>
                                 <!-- /.btn-group -->
