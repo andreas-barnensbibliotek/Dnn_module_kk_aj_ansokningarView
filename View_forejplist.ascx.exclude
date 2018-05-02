@@ -40,7 +40,7 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-md-9">
-                    <div id="kk_aj_ansokningMain" class="box box-primary">
+                    <div class="box box-primary">
                         <div class="kk_aj_ansokanboxheader box-header with-border label-primary ">
                             <h3 class="kk_aj_box-title box-title" rel="kk_aj_ansokningarView" >Ansökningar</h3>
                             <div class="box-tools pull-right">
@@ -55,79 +55,46 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body no-padding">
-                            <div class="mailbox-controls jplist-panel">
+                            <div class="mailbox-controls">
                                 <!-- Check all button -->
-                                <button type="button" class="btn btn-default btn-sm checkbox-toggle kk_aj_markall" style="display:none;" title="Markera alla">
+                                <button type="button" class="btn btn-default btn-sm checkbox-toggle kk_aj_markall" title="Markera alla">
                                     <i class="fa fa-square-o"></i>
                                 </button>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Publicera/Avpublicera" style="display:none;"><i class="fa fa-flag-o" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-default btn-sm kk_aj_approveannons" title="Publicera/Avpublicera"><i class="fa fa-flag-o" aria-hidden="true"></i></button>
                                     <button type="button" class="btn btn-default btn-sm kk_aj_denieannons" title="Arkivera"><i class="fa fa-lock" aria-hidden="true"></i></button>
                                     
                                 </div>
                                 <!-- /.btn-group -->
-                                
                                 <button type="button" class="btn btn-default btn-sm kk_aj_uppdateraannonser" title="Uppdatera"><i class="fa fa-refresh"></i></button>
-                                <!-- select control -->
-     
-                                <div class="pull-right kk_aj_listpagecount_temp">
-                                    <div 
-                                       class="jplist-label" 
-                                       data-type="Sida {current} av {pages}" 
-                                       data-control-type="pagination-info" 
-                                       data-control-name="paging" 
-                                       data-control-action="paging">
-                                    </div>	
-                                   <div 
-                                     class="jplist-pagination" 
-                                     data-control-type="pagination" 
-                                     data-control-name="paging" 
-                                     data-control-action="paging"
-                                     data-items-per-page="20"                                     
-                                     data-jump-to-start="true"  >
-                                  </div>	
+                                <div class="pull-right kk_aj_listpagecount">
+                                  
                                 </div>
                                 <!-- /.pull-right -->
                             </div>
                             <div class="table-responsive mailbox-messages">
                                 <table class="table table-hover table-striped ">
                                     
-                                        <tr class="tableheader jplist-panel">
+                                        <tr class="tableheader">
                                           
-                                            <td colspan="6">
-                                                 <select 
-                                                     class="jplist-select" 
-                                                     data-control-type="sort-select" 
-                                                     data-control-name="sort" 
-                                                     data-control-action="sort"                                                     
-                                                 >
-         
-                                                   <option data-path="default">Sortera</option>
-                                                   <option data-path=".kk_aj_flag" data-order="asc" data-type="number">Typ A-Ö</option>
-                                                   <option data-path=".kk_aj_flag" data-order="desc" data-type="number">Typ Ö-A</option>
-                                                   <option data-path=".kk_aj_title" data-order="asc" data-type="text">Rubrik A-Ö</option>
-                                                   <option data-path=".kk_aj_title" data-order="desc" data-type="text">Rubrik Ö-A</option>
-                                                   <option data-path=".kk_aj_utovare" data-order="asc" data-type="text">Utövare A-Ö</option>
-                                                   <option data-path=".kk_aj_utovare" data-order="desc" data-type="text">Utövare Ö-A</option>
-                                                   <option data-path=".kk_aj_konstform" data-order="asc" data-type="text">Konstform asc</option>
-                                                   <option data-path=".kk_aj_konstform" data-order="desc" data-type="text">Konstform desc</option>
-                                                   <option data-path=".kk_aj_date" data-order="asc" data-type="number">Datum asc</option>
-                                                   <option data-path=".kk_aj_date" data-order="desc" data-type="number">Datum desc</option>								
-                                              </select>		
-                                            </td>
+                                            <td></td>
+                                            <td></td>                                            
+                                            <td><a href="#" class="kk_aj_sortrubrik">Rubrik <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td><a href="#" class="kk_aj_sortutovare">Utövare  <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>                                            
+                                            <td><a href="#" class="kk_aj_sortkonstform">Konstform  <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
+                                            <td><a href="#" class="kk_aj_sortdatum">Datum <i class="fa fa-caret-down" aria-hidden="true"></i></a></td>
                                             
                                         </tr>     
-                                    <tbody id="kk_aj_ansokningar" class="kk_aj_ansokningar">
-                                                         
-                                    <!-- handlebrake template: kk_aj_ansokningarLista.txt Loop -->
-                                        <tr class="jplist-no-results">                                       
+                                    <tbody class="kk_aj_ansokningar">
+                                        <tr>                                       
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td>Finns inget att visa!</td>                                            
+                                            <td><div class="kk_aj_loader"></div></td>                                            
                                             <td></td>
                                             <td></td>                                       
-                                        </tr>          
+                                        </tr>                                     
+                                    <!-- handlebrake template: kk_aj_ansokningarLista.txt Loop -->
                                     </tbody>
                                 </table>
                                 <!-- /.table -->
@@ -148,22 +115,8 @@
                                 </div>
                                 <!-- /.btn-group -->
                                 <button type="button" class="btn btn-default btn-sm kk_aj_uppdateraannonser" title="Uppdatera"><i class="fa fa-refresh"></i></button>
-                                <div class="pull-right kk_aj_listpagecount_temp jplist-panel">
-                                    <div 
-                                       class="jplist-label" 
-                                       data-type="Sida {current} av {pages}" 
-                                       data-control-type="pagination-info" 
-                                       data-control-name="paging" 
-                                       data-control-action="paging">
-                                    </div>	
-                                   <div 
-                                     class="jplist-pagination" 
-                                     data-control-type="pagination" 
-                                     data-control-name="paging" 
-                                     data-control-action="paging"
-                                     data-items-per-page="20"                                     
-                                     data-jump-to-start="true"  >
-                                  </div>	
+                                <div class="pull-right kk_aj_listpagecount">
+                                    
                                 </div>
                                 <!-- /.pull-right -->
                             </div>
