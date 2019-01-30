@@ -28,6 +28,7 @@
                             <div class="box-body no-padding">
                                 <ul class="nav nav-pills nav-stacked kk_aj_ansokanmenu">
                                     <li class="kk_aj_nyansokanmenu active"><a href="#" class="kk_aj_nyadansokningar"><i class="fa fa-inbox"></i>Ansökningar<span class="label label-primary pull-right kk_aj_newcount">0</span></a></li>
+                                    <li class="kk_aj_underbehandlingnsokanmenu"><a href="#" class="kk_aj_underbehandlingansokningar"><i class="fa fa-bookmark-o"></i>Under behandling<span class="label label-warning pull-right kk_aj_underbehandlingcount">0</span></a></li>
                                     <li class="kk_aj_approvedansokanmenu"><a href="#" class="kk_aj_approvedansokningar"><i class="fa fa-file-text-o" aria-hidden="true"></i> Godkända <span class="label label-success pull-right kk_aj_approvedcount">0</span></a></li>
                                     <li class="kk_aj_deniedansokanmenu"><a href="#" class="kk_aj_deniedansokningar"><i class="fa fa-file-archive-o" aria-hidden="true"></i> Nekade <span class="label label-danger pull-right kk_aj_deniedcount">0</span></a></li>
                                     <li class="kk_aj_archiveansokanmenu"><a href="#" class="kk_aj_archiveansokningar"><i class="fa fa-lock" aria-hidden="true"></i> Arkiv</a></li>
